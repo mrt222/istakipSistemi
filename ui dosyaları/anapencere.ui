@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1140</width>
+    <height>603</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>30</y>
+      <width>791</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="baslik_label">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>20</y>
+       <width>491</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI Black</family>
+       <pointsize>17</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>İŞ TAKİP VE YÖNETİM SİSTEMİ</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLineEdit" name="arama_yap_line_edit">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>160</y>
+      <width>741</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="bilgi_tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>210</y>
+      <width>1091</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="showGrid">
+     <bool>false</bool>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>120</number>
+    </attribute>
+    <attribute name="horizontalHeaderStretchLastSection">
+     <bool>true</bool>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>ID</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Proje Adı</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Proje Sorumlusu</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Çalışan İşçi Sayısı</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Proje Durumu</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Maliyet</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Şirket</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Proje Başlangıç Tarihi</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Proje Bitiş Tarihi</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1140</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="kitap_duzenleme_menu">
+    <property name="title">
+     <string>Seçenekler</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="proje_ekleme_sayfa"/>
+   </widget>
+   <addaction name="kitap_duzenleme_menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionKitap_D_zenleme_Sayfas">
+   <property name="text">
+    <string>Kitap DÜzenleme  Sayfası</string>
+   </property>
+  </action>
+  <action name="proje_ekleme_sayfa">
+   <property name="text">
+    <string>Proje Ekleme</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
